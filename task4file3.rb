@@ -1,18 +1,3 @@
-def deposit(sum)
-    file=File.open('balance.txt')
-    file_data=file.read
-    file_data=file_data.to_f+sum.to_f
-    #File.write('balance.txt',file_data)
-    return file_data
-end
-def withdraw(sum)
-    file=File.open('balance.txt')
-    file_data=file.read
-    file_data=file_data.to_f-sum.to_f
-    #File.write('balance.txt',file_data)
-    return file_data
-end
-
 def balance
     file=File.open('balance.txt')
     puts file.read
